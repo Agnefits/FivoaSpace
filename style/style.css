@@ -1,0 +1,393 @@
+/*Import Font*/
+@font-face {
+    font-family: 'Changa';
+    src: url('../font/Changa/Changa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../font/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../font/Outfit/static/Outfit-Thin.ttf');
+    font-weight: 300;
+}
+
+/*Color variables*/
+:root {
+    --color-primary: #E4B005;
+    --color-bg: #1B1B1B;
+}
+
+/*Body*/
+body {
+    background-color: var(--color-bg);
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+}
+
+.text-color-primary {
+    color: var(--color-primary);
+}
+
+/*Navbar*/
+.navbar-brand {
+    padding: 0 10%;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Changa', sans-serif;
+}
+
+.navbar-brand .img-logo {
+    width: 2rem;
+}
+
+.navbar-brand::before {
+    content: "";
+    width: 100%;
+    height: 9px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -8px;
+    left: -12px;
+
+    border-radius: 0 0 7px 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-toggler {
+    background-color: var(--color-primary);
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0 1rem;
+    color: #fff;
+    font-family: 'Changa', sans-serif;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link.active {
+    color: var(--color-primary) !important;
+}
+
+.nav-link.active::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 5px;
+}
+
+.register {
+    background-color: var(--color-primary);
+    font-family: 'Changa', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+}
+
+/*Welcome Section*/
+.welcome {
+    margin-top: 15%;
+}
+
+.welcome__bg {
+    right: 0;
+    width: 50%;
+}
+
+.welcome-bg-circle {
+    width: 100%;
+    height: 100%;
+    background-color: #fff2;
+    position: absolute;
+    border-radius: 50%;
+    top: -5%;
+    left: 0;
+    z-index: -2;
+}
+
+.welcome-bg-circle::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-bg);
+    position: absolute;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+
+.img-welcome {
+    width: 100%;
+    position: relative;
+}
+
+.welcome-gradient {
+    margin-left: 5rem;
+    font-size: 2rem;
+    background: linear-gradient(90deg, var(--color-primary) 0%, #fff 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome-brand {
+    font-size: 4rem;
+    position: relative;
+    font-family: 'Changa', sans-serif;
+}
+
+.welcome-brand .img-logo {
+    width: 4rem;
+}
+
+.welcome-description {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.welcome-buttons .btn {
+    font-size: 1.2rem;
+    font-family: 'Changa', sans-serif;
+}
+
+.welcome-partners p {
+    position: relative;
+}
+
+.welcome-partners p::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    background-color: var(--color-primary);
+    margin: 0 0.5rem;
+}
+
+.welcome-partners img {
+    width: 5rem;
+    margin: 0 1rem;
+}
+
+/* Animation */
+@keyframes textCycle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    6% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    8% {
+        transform: translateY(5px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    28% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.welcome-animated-word {
+    display: grid;
+    /* Stack words on top of each other */
+    grid-template-areas: "stack";
+    font-size: 2.5rem;
+}
+
+.welcome-animated-word .word1,
+.welcome-animated-word .word2,
+.welcome-animated-word .word3 {
+    grid-area: stack;
+    /* All words occupy the same space */
+    opacity: 0;
+    /* Start hidden */
+    animation: textCycle 10.5s linear infinite;
+}
+
+.welcome-animated-word .word1 {
+    animation-delay: 0s;
+}
+
+.welcome-animated-word .word2 {
+    animation-delay: 3.5s;
+}
+
+.welcome-animated-word .word3 {
+    animation-delay: 7s;
+}
+
+/* What Section */
+
+.what {
+    margin-top: 15%;
+}
+
+.what-brand {
+    font-size: 4rem;
+    position: relative;
+    font-family: 'Changa', sans-serif;
+}
+
+.what-brand .img-logo {
+    width: 4rem;
+}
+
+.what__bg,
+.what-messages {
+    width: 100vw;
+    height: 70vh;
+}
+
+.what-img-left {
+    width: 30%;
+    transform: scaleX(-1);
+}
+
+.what-img-right {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.what-buttons .btn {
+    font-size: 2rem;
+    font-family: 'Changa', sans-serif;
+}
+
+/* Conversation Animation */
+.msg {
+    position: absolute;
+    font-size: 2rem;
+    max-width: 40%;
+    opacity: 0;
+    font-family: 'Changa', sans-serif;
+}
+
+.person1 {
+    left: 30%;
+    top: 30%;
+}
+
+.person2 {
+    right: 30%;
+    bottom: 20%;
+}
+
+/* Specific positions for longer flow if needed, or just keep them in one spot */
+/* For now, let's keep them in roughly the same spot to simulate a conversation */
+
+@keyframes messageSequence {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.9);
+    }
+}
+
+/* 
+Total cycle time: let's say 20s for the whole conversation.
+We have 6 messages.
+*/
+
+.msg {
+    animation: messageSequence 28s infinite;
+}
+
+.msg-1 {
+    animation-delay: 0s;
+}
+
+/* 0-4s */
+.msg-2 {
+    animation-delay: 4s;
+}
+
+/* 4-8s */
+.msg-3 {
+    animation-delay: 8s;
+}
+
+/* 8-12s */
+.msg-4 {
+    animation-delay: 12s;
+}
+
+/* 12-16s */
+.msg-5 {
+    animation-delay: 16s;
+}
+
+/* 16-22s */
+.msg-6 {
+    animation-delay: 22s;
+}
+
+/* 22-28s */
+
+/* Adjusting duration for longer text */
+/* 
+Message 1: "Hi!" (Short)
+Message 2: "Hi" (Short)
+Message 3: "Do you know..." (Medium)
+Message 4: "No..." (Medium)
+Message 5: "Ok..." (Medium)
+Message 6: "FivoraSpace helps..." (Long)
+*/
+
+/* Let's refine the timing. 
+We can't easily change the keyframe percentages per element without multiple animations.
+So we'll stick to a fixed slot size for simplicity, or use a longer total time and overlap?
+Fixed slot of 4s seems okay for reading, maybe 5s.
+6 messages * 4s = 24s total.
+*/
