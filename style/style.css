@@ -1,103 +1,54 @@
-/*Import Font*/
 @font-face {
-    font-family: 'Changa';
-    src: url('../font/Changa/Changa-VariableFont_wght.ttf');
+    font-family: outfit;
+    src: url(../font/Outfit/Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'Outfit';
-    src: url('../font/Outfit/Outfit-VariableFont_wght.ttf');
+    font-family: outfit;
+    src: url(../font/Outfit/static/Outfit-Thin.ttf);
+    font-weight: 100;
 }
 
 @font-face {
-    font-family: 'Outfit';
-    src: url('../font/Outfit/static/Outfit-Thin.ttf');
-    font-weight: 300;
+    font-family: changa;
+    src: url(../font/Changa/Changa-VariableFont_wght.ttf);
 }
 
-/*Color variables*/
 :root {
-    --color-primary: #E4B005;
-    --color-bg: #1B1B1B;
+    --primary-color: #05e4bf;
+    --bg-color: #1B1B1B;
 }
 
-/*Body*/
 body {
-    background-color: var(--color-bg);
-    font-family: 'Outfit', sans-serif;
-    color: #fff;
-    overflow-x: hidden;
+    background-color: var(--bg-color);
+    font-family: outfit, sans-serif;
 }
 
-.text-color-primary {
-    color: var(--color-primary);
+/* Navbar Section */
+.navbar {
+    font-family: changa, sans-serif;
 }
 
-/*Navbar*/
-.navbar-brand {
-    padding: 0 10%;
-    font-size: 2rem;
-    position: relative;
-    font-family: 'Changa', sans-serif;
-}
-
-.navbar-brand .img-logo {
-    width: 2rem;
+.nav-logo {
+    height: 1.5rem;
 }
 
 .navbar-brand::before {
     content: "";
     width: 100%;
-    height: 9px;
-    background-color: var(--color-primary);
+    height: 10px;
+    background-color: var(--primary-color);
     position: absolute;
     top: -8px;
     left: -12px;
-
     border-radius: 0 0 7px 0;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    justify-content: center;
+#navbarNav {
+    margin-left: 15rem;
 }
 
-.navbar-toggler {
-    background-color: var(--color-primary);
-}
-
-.nav-link {
-    font-size: 1.5rem;
-    position: relative;
-    margin: 0 1rem;
-    color: #fff;
-    font-family: 'Changa', sans-serif;
-}
-
-.nav-link:hover {
-    color: var(--color-primary);
-}
-
-.nav-link.active {
-    color: var(--color-primary) !important;
-}
-
-.nav-link.active::before {
-    content: "";
-    width: 40px;
-    height: 3px;
-    background-color: var(--color-primary);
-    position: absolute;
-    bottom: 5px;
-}
-
-.register {
-    background-color: var(--color-primary);
-    font-family: 'Changa', sans-serif;
-    font-size: 1.5rem;
-    margin: 0 3rem;
-}
-
-/*Welcome Section*/
+/* Welcome Section*/
 .welcome {
     margin-top: 15%;
 }
@@ -107,60 +58,53 @@ body {
     width: 50%;
 }
 
-.welcome-bg-circle {
-    width: 100%;
-    height: 100%;
-    background-color: #fff2;
-    position: absolute;
-    border-radius: 50%;
-    top: -5%;
-    left: 0;
-    z-index: -2;
-}
-
-.welcome-bg-circle::before {
-    content: "";
-    width: 80%;
-    height: 80%;
-    background-color: var(--color-bg);
-    position: absolute;
-    border-radius: 50%;
-    top: 10%;
-    left: 10%;
-    z-index: -1;
-}
-
 .img-welcome {
     width: 100%;
     position: relative;
 }
 
+.welcome-bg-circle {
+    width: 100%;
+    height: 100%;
+    background: #fff2;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    z-index: -2;
+}
+
+.welcome-bg-circle::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background: var(--bg-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+
 .welcome-gradient {
     margin-left: 5rem;
-    font-size: 2rem;
-    background: linear-gradient(90deg, var(--color-primary) 0%, #fff 15%);
+    background: linear-gradient(90deg, var(--primary-color) 0%, #FFFFFF 15%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .welcome-brand {
     font-size: 4rem;
-    position: relative;
-    font-family: 'Changa', sans-serif;
+    font-family: changa, sans-serif;
 }
 
-.welcome-brand .img-logo {
+.welcome-logo {
     width: 4rem;
 }
 
-.welcome-description {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.welcome-buttons .btn {
-    font-size: 1.2rem;
-    font-family: 'Changa', sans-serif;
+.welcome-buttons,
+.what-buttons {
+    font-family: changa, sans-serif;
 }
 
 .welcome-partners p {
@@ -173,7 +117,8 @@ body {
     height: 2px;
     position: absolute;
     top: 50%;
-    background-color: var(--color-primary);
+    left: 6rem;
+    background-color: var(--primary-color);
     margin: 0 0.5rem;
 }
 
@@ -249,24 +194,17 @@ body {
 }
 
 /* What Section */
-
-.what {
-    margin-top: 15%;
-}
-
 .what-brand {
-    font-size: 4rem;
-    position: relative;
-    font-family: 'Changa', sans-serif;
+    font-size: 3rem;
+    font-family: changa, sans-serif;
 }
 
-.what-brand .img-logo {
-    width: 4rem;
+.what-logo {
+    width: 3rem;
 }
 
 .what__bg,
 .what-messages {
-    width: 100vw;
     height: 70vh;
 }
 
@@ -277,28 +215,19 @@ body {
 
 .what-img-right {
     width: 30%;
-    position: absolute;
     right: 0;
     bottom: 0;
 }
 
-.what-buttons .btn {
-    font-size: 2rem;
-    font-family: 'Changa', sans-serif;
-}
-
-/* Conversation Animation */
 .msg {
-    position: absolute;
-    font-size: 2rem;
-    max-width: 40%;
+    max-width: 60%;
+    font-family: changa, sans-serif;
     opacity: 0;
-    font-family: 'Changa', sans-serif;
 }
 
 .person1 {
     left: 30%;
-    top: 30%;
+    top: 30%
 }
 
 .person2 {
@@ -306,10 +235,6 @@ body {
     bottom: 20%;
 }
 
-/* What Animation */
-
-/* Specific positions for longer flow if needed, or just keep them in one spot */
-/* For now, let's keep them in roughly the same spot to simulate a conversation */
 
 @keyframes messageSequence {
     0% {
@@ -388,141 +313,110 @@ Message 5: "Ok..." (Medium)
 Message 6: "FivoraSpace helps..." (Long)
 */
 
-/* Let's refine the timing. 
-We can't easily change the keyframe percentages per element without multiple animations.
-So we'll stick to a fixed slot size for simplicity, or use a longer total time and overlap?
-Fixed slot of 4s seems okay for reading, maybe 5s.
-6 messages * 4s = 24s total.
-*/
-
 /* Services Section */
 .services {
-    margin-top: 10%;
-}
-
-.services__bg {
-    left: 0;
-    width: 80%;
-}
-
-.services-bg-circle {
-    width: 100%;
-    height: 90%;
-    background-color: #fff2;
-    position: absolute;
-    border-radius: 50%;
-    top: -5%;
-    right: 0;
-    z-index: -2;
-}
-
-.services-bg-circle::before {
-    content: "";
-    width: 80%;
-    height: 80%;
-    background-color: var(--color-bg);
-    position: absolute;
-    border-radius: 50%;
-    top: 10%;
-    left: 10%;
-    z-index: -1;
-}
-
-.img-services {
-    width: 100%;
-    position: relative;
-}
-
-.services-expanded {
-    font-size: 2rem;
-}
-
-.services-world {
-    font-size: 2.5rem;
-}
-
-.services-description {
-    font-size: 1.5rem;
-    font-weight: 300;
+    margin: 10% 0;
 }
 
 .badge {
     background-color: #E4B00520;
 }
 
-/* Reach Section 1 */
-.reach {
-    margin: 15% 0;
+.service__bg {
+    width: 80%;
 }
 
-.reach__bg {
-    right: 0;
-    width: 50%;
-}
-
-.reach-bg-circle {
-    width: 65%;
-    height: 70%;
-    background-color: #fff2;
-    position: absolute;
+.services-bg-circle {
+    width: 100%;
+    height: 90%;
+    background: #fff2;
     border-radius: 50%;
+    position: absolute;
     top: -5%;
-    right: 20%;
+    left: 0;
     z-index: -2;
 }
 
-.reach-bg-circle::before {
+.services-bg-circle::after {
     content: "";
     width: 80%;
     height: 80%;
-    background-color: var(--color-bg);
-    position: absolute;
+    background: var(--bg-color);
     border-radius: 50%;
+    position: absolute;
     top: 10%;
-    right: 10%;
+    left: 10%;
     z-index: -1;
 }
 
-.img-reach {
-    width: 80%;
-    position: relative;
-}
-
+/* Reach Section */
 .reach-world {
-    font-size: 6rem;
+    font-size: 7rem;
+    margin: -30px 0;
 }
 
-/* Reach Section 2 */
-.big-quote {
-    top: 0;
-    font-size: 6rem;
+.img-reach {
+    width: 75%;
+}
+
+.reach-bg-circle {
+    width: 75%;
+    height: 90%;
+    background: #fff2;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    z-index: -2;
+}
+
+.reach-bg-circle::after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    background: var(--bg-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: -1;
 }
 
 .card-text {
-    min-height: 12rem;
+    min-height: 160px;
 }
 
-.feedbacks {
-    margin: 5% 0;
+.big-quote {
+    font-size: 10rem;
+    margin: -60px 0 -130px 0;
 }
 
-.feedback-card .job-title {
-    font-size: 0.8rem;
+.job-title {
+    font-size: 0.7rem;
 }
 
 /* Footer Section */
+.footer-brand,
+.footer-copyright {
+    font-family: changa, sans-serif;
+}
+
+.footer-medias {
+    right: 5%;
+    bottom: 20%;
+}
+
 footer {
-    overflow: hidden;
+    margin-top: 5rem;
 }
 
 footer::before {
     content: "";
-    width: 80%;
-    height: 2px;
+    width: 90%;
+    height: 3px;
+    background-color: var(--primary-color);
     position: absolute;
-    top: -5%;
-    left: 10%;
-    background-color: var(--color-primary);
+    left: 5%;
 }
 
 footer::after {
@@ -533,20 +427,9 @@ footer::after {
     transform: translateX(-50%);
     width: 40%;
     height: 120px;
-    background: var(--color-primary);
-    filter: blur(150px);
+    background-color: var(--primary-color);
+    filter:blur(150px);
     border-radius: 50%;
     z-index: -1;
     opacity: 0.6;
-}
-
-.footer-medias {
-    right: 5%;
-    bottom: 17%;
-}
-
-.footer-copyright {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-    font-family: 'Changa', sans-serif;
 }

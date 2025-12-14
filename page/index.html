@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FivoaSpace</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <!-- custom style sheet -->
+    <title>FivoraSpace</title>
+
+    <!-- Bootstrap Style-->
+    <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.css">
+
+    <!-- Custom Style -->
     <link rel="stylesheet" href="../style/style.css">
+
     <meta name="description" content="FivoaSpace is a landing page for a space company">
     <meta name="keywords" content="FivoaSpace, space, landing page">
     <meta name="author" content="Agnefits">
@@ -17,113 +20,108 @@
     <link rel="icon" type="image/png" href="../img/icons/logo.png">
 </head>
 
-<body>
-    <!-- Navbar -->
+<body class="text-white">
+
+    <!-- Navbar Section-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span class="text-white">Fivoa</span><span class="text-color-primary">Space</span>
-                <img class="img-logo" src="../img/icons/logo.png" alt="LOGO"></a>
+            <a class="navbar-brand position-absolute px-5" href="#">
+                <span class="text-white fs-2">Fivora<span class="text-warning">Space</span></span>
+                <img class="nav-logo" src="../img/icons/logo.png" alt="Logo" class="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="#Home">Home</a>
+                <ul class="navbar-nav fs-4 m-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active text-warning fw-bold" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#AboutUs">About</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ContactUs">Contact</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">Contact</a>
                     </li>
-                    <button class="btn btn-warning register">Register</button>
+                    <li class="nav-item mx-5">
+                        <button class="btn btn-warning fs-4" type="button">Register</button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Welcome Section -->
-    <section id="Home" class="welcome d-flex align-items-center">
+    <!-- Welcome Section-->
+    <section id="Home" class="welcome d-flex align-items-center my-5">
         <div class="welcome__bg position-absolute">
             <div class="welcome-bg-circle"></div>
-            <img class="img-welcome" src="../img/astronaut/1.png" alt="Welcome Background">
+            <img class="img-welcome" src="../img/astronaut/1.png" alt="Welcome Background" />
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="welcome-gradient ms-5">Welcome to</p>
-                    <h1 class="welcome-brand">
-                        <span class="text-white">Fivoa</span><span class="text-color-primary">Space</span>
-                        <img class="img-logo" src="../img/icons/logo.png" alt="LOGO"></a>
-                    </h1>
-                    <p class="text-white welcome-animated-word">
-                        <span class="word1">
-                            Where <span class="text-color-primary">Growth</span>
-                            meets simplicity.
-                        </span>
-                        <span class="word2">
-                            Turning potential into <span class="text-color-primary">Progress.</span>
-                        </span>
-                        <span class="word3">
-                            We make <span class="text-color-primary">Success</span>
-                            feel <span class="text-color-primary">Effortless.</span>
-                        </span>
-                    </p>
-                    <p class="text-white welcome-description col-6">FivoraSpace is your zone for progress. A place to
-                        learn, move,
-                        and grow—without limits.</p>
-
-                </div>
-                <div class="welcome-buttons">
-                    <button class="btn btn-warning">Get Started</button>
-                    <button class="btn btn-outline-warning text-white mx-5">Service</button>
-                </div>
-                <div class="welcome-partners mt-5">
-                    <p class="text-color-primary">Our Partners</p>
-                    <div class="col-6">
-                        <img src="../img/icons/dribbble-wordmark.png" alt="Dribbble">
-                        <img src="../img/icons/yahoo-wordmark.png" alt="Yahoo">
-                        <img src="../img/icons/google-wordmark.png" alt="Google">
-                    </div>
+            <div class="w-100">
+                <p class="welcome-gradient fs-2">Welcome to</p>
+                <h1 class="welcome-brand text-white">
+                    Fivora<span class="text-warning">Space</span>
+                    <img class="welcome-logo" src="../img/icons/logo.png" alt="Logo" class="logo">
+                </h1>
+                <p class="text-white welcome-animated-word">
+                    <span class="word1">Where <span class="text-warning">Growth</span> meets simplicity.</span>
+                    <span class="word2">Turning potential into <span class="text-warning">Progress.</span></span>
+                    <span class="word3">We make <span class="text-warning">Success</span> feel <span
+                            class="text-warning">Effortless.</span></span>
+                </p>
+                <p class="text-white welcome-description fs-4 fw-light w-50">
+                    FivoraSpace is your zone for progress.A place to learn, move, and
+                    grow — without limits.
+                </p>
+            </div>
+            <div class="welcome-buttons">
+                <button class="btn btn-warning fs-5 me-4">Get Started</button>
+                <button class="btn border-warning text-white fs-5 mx-5 px-4">Service</button>
+            </div>
+            <div class="welcome-partners mt-5">
+                <p class="text-warning">Our Partners</p>
+                <div class="col-6">
+                    <img src="../img/icons/dribbble-wordmark.png" alt="Dribbble">
+                    <img src="../img/icons/yahoo-wordmark.png" alt="Yahoo">
+                    <img src="../img/icons/google-wordmark.png" alt="Google">
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- What Section -->
-    <section id="AboutUs" class="what d-flex align-items-center flex-column position-relative">
-        <p class="what-brand">
-            <span class="text-white">Fivoa</span><span class="text-color-primary">Space</span>
-            <img class="img-logo" src="../img/icons/logo.png" alt="LOGO"></a>
+    <section id="AboutUs" class="what d-flex align-items-center flex-column position-relative mt-5">
+        <p class="what-brand text-white">
+            Fivora<span class="text-warning">Space</span>
+            <img class="what-logo" src="../img/icons/logo.png" alt="Logo" class="logo">
         </p>
-        <div class="what__bg position-relative">
-            <img class="what-img-left" src="../img/astronaut/8.png" alt="Welcome Background">
-            <img class="what-img-right" src="../img/astronaut/4.png" alt="Welcome Background">
+        <div class="what__bg position-relative w-100">
+            <img src="../img/astronaut/8.png" alt="Welcome Background" class="what-img-left">
+            <img src="../img/astronaut/4.png" alt="Welcome Background" class="what-img-right position-absolute">
         </div>
-        <div class="what-messages position-absolute pointer-events-none">
-            <span class="msg msg-1 person1">Hi!</span>
-            <span class="msg msg-2 person2">Hi</span>
-            <span class="msg msg-3 person1">Do you know what Fivora<span class="text-color-primary">Space</span>
-                is?</span>
-            <span class="msg msg-4 person2">No, I want to know what it is</span>
-            <span class="msg msg-5 person1">Ok, let me tell you what Fivora<span class="text-color-primary">Space</span>
+        <div class="what-messages position-absolute fs-2 w-100">
+            <span class="msg msg-1 person1 position-absolute">Hi!</span>
+            <span class="msg msg-2 person2 position-absolute">HI</span>
+            <span class="msg msg-3 person1 position-absolute">Do you know what Fivora<span
+                    class="text-warning">Space</span> is?</span>
+            <span class="msg msg-4 person2 position-absolute">NO I want to know what it is</span>
+            <span class="msg msg-5 person1 position-absolute">OK, let me tell you what Fivora<span
+                    class="text-warning">Space</span>
                 is!</span>
-            <span class="msg msg-6 person1">Fivora<span class="text-color-primary">Space</span> helps you
-                turn ideas into
-                action.
-                From vision to execution.
+            <span class="msg msg-6 person1 position-absolute">FivoraSpace helps you turn ideas into action.
+                From vision to execution .
                 we make every step of growth simple,
                 structured, and effective.</span>
         </div>
         <div class="what-buttons">
-            <button class="btn btn-warning">Get Started</button>
-            <button class="btn btn-outline-warning text-white mx-5">Service</button>
+            <button class="btn btn-warning mx-5 fs-4">Get Statrted</button>
+            <button class="btn btn-outline-warning text-white mx-5 px-4 fs-4">Service</button>
         </div>
     </section>
 
@@ -131,62 +129,64 @@
     <section id="Services" class="services d-flex align-items-center">
         <div class="services__bg position-relative">
             <div class="services-bg-circle"></div>
-            <img class="img-services" src="../img/astronaut/2.png" alt="Services Background">
+            <img class="img-services" src="../img/astronaut/2.png" alt="Welcome Background" />
         </div>
         <div class="container">
             <div class="row">
                 <div>
-                    <span class="badge fw-normal fs-6 p-3 mb-2">Our Services</span>
-                    <div class="services-expanded "><span class="text-color-primary">Expanded</span> for you</div>
-                    <div class="services-world fw-bold">A world of <span class="text-color-primary">varienty</span>
+                    <span class="badge fw-normal fs-6 px-3 py-2 mb-2">
+                        Our Services
+                    </span>
+                    <div class="fs-1"><span class="text-warning">Expanded</span> for you</div>
+                    <div class="display-3 fw-bold">A world of <span class="text-warning">variety</span></div>
+                    <div class="fs-3 fw-light">Discover more options, more styles, and more possibilities — all made for
+                        you.</div>
+                </div>
+                <div class="col-6 my-3">
+                    <div class="card bg-transparent border-warning">
+                        <div class="card-body row">
+                            <div class="col-4">
+                                <img src="../img/icons/idea.png" alt="Idea">
+                            </div>
+                            <p class="text-white fw-normal fs-3 col-8">
+                                Idea <span class="text-warning">Creation</span>
+                            </p>
+                        </div>
                     </div>
-                    <p class="services-description">
-                        Discover more options, more styles and more possibilities - all made for you.
-                    </p>
-                    <div class="row">
-                        <div class="col-6 my-2">
-                            <div class="card bg-transparent border-warning py-3">
-                                <div class="card-body row">
-                                    <div class="col-4">
-                                        <img src="../img/icons/idea.png" alt="idea">
-                                    </div>
-                                    <p class="text-white fw-light fs-3 col-8">Idea <span
-                                            class="text-color-primary">Creation</span></p>
-                                </div>
+                </div>
+                <div class="col-6 my-3">
+                    <div class="card bg-transparent border-warning">
+                        <div class="card-body row">
+                            <div class="col-4">
+                                <img src="../img/icons/data-analytics.png" alt="Analysis">
                             </div>
+                            <p class="text-white fw-normal fs-3 col-8">
+                                Market <span class="text-warning">Analysis</span>
+                            </p>
                         </div>
-                        <div class="col-6 my-2">
-                            <div class="card bg-transparent border-warning py-3">
-                                <div class="card-body row">
-                                    <div class="col-4">
-                                        <img src="../img/icons/data-analytics.png" alt="idea">
-                                    </div>
-                                    <p class="text-white fw-light fs-3 col-8">Market <span
-                                            class="text-color-primary">Analysis</span></p>
-                                </div>
+                    </div>
+                </div>
+                <div class="col-6 my-3">
+                    <div class="card bg-transparent border-warning">
+                        <div class="card-body row">
+                            <div class="col-4">
+                                <img src="../img/icons/fluent-people.png" alt="Audience">
                             </div>
+                            <p class="text-white fw-normal fs-3 col-8">
+                                Audience <span class="text-warning">Identity</span>
+                            </p>
                         </div>
-                        <div class="col-6 my-2">
-                            <div class="card bg-transparent border-warning py-3">
-                                <div class="card-body row">
-                                    <div class="col-4">
-                                        <img src="../img/icons/fluent-people.png" alt="idea">
-                                    </div>
-                                    <p class="text-white fw-light fs-3 col-8">Audience <span
-                                            class="text-color-primary">Identity</span></p>
-                                </div>
+                    </div>
+                </div>
+                <div class="col-6 my-3">
+                    <div class="card bg-transparent border-warning">
+                        <div class="card-body row">
+                            <div class="col-4">
+                                <img src="../img/icons/google-podcasts.png" alt="Brand">
                             </div>
-                        </div>
-                        <div class="col-6 my-2">
-                            <div class="card bg-transparent border-warning py-3">
-                                <div class="card-body row">
-                                    <div class="col-4">
-                                        <img src="../img/icons/google-podcasts.png" alt="idea">
-                                    </div>
-                                    <p class="text-white fw-light fs-3 col-8">Brand <span
-                                            class="text-color-primary">Identity</span></p>
-                                </div>
-                            </div>
+                            <p class="text-white fw-normal fs-3 col-8">
+                                Brand <span class="text-warning">Identity</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -194,205 +194,162 @@
         </div>
     </section>
 
-    <!-- Reach Section 1 -->
-    <section class="reach d-flex align-items-center">
-        <div class="reach__bg position-absolute">
-            <div class="reach-bg-circle"></div>
-            <img class="img-reach" src="../img/astronaut/3.png" alt="Reach Background">
+    <!-- Reach Section -->
+    <section id="OurReach" class="reach container">
+        <div class="d-flex w-100 align-items-start">
+            <div class="col-6">
+                <span class="badge fw-normal fs-6 px-3 py-2 mb-2">
+                    Our Reach
+                </span>
+                <div class="fs-2">We are <span class="text-warning">vision</span></div>
+                <div class="fs-1 fw-bold">beyond the</div>
+                <div class="text-warning reach-world fw-bold">World.</div>
+                <div class="fs-5 fw-light">We are growing all over the world! From small local beginnings to global
+                    success,
+                    our energy knows no limits. <br>
+                    Every step we take connects people, ideas, and dreams from every corner of the planet.<br>
+                    We don’t just exist — we create, inspire, and lead.</div>
+            </div>
+            <div class="col-6 d-flex justify-content-end position-relative">
+                <div class="reach-bg-circle"></div>
+                <img class="img-reach" src="../img/astronaut/3.png" alt="Reach Background" />
+            </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <span class="badge fw-normal fs-6 p-3 mb-2">Our Reach</span>
-                    <div class="fs-2">We are <span class="text-color-primary">vision</span></div>
-                    <div class="fs-1 fw-bold">beyond the<span
-                            class="reach-world text-color-primary d-block">World.</span>
+        <div class="my-5 d-flex flex-column align-items-center">
+            <div>
+                <span class="badge fw-normal fs-6 px-3 py-2 mb-2">
+                    Our Reach
+                </span>
+            </div>
+            <div class="display-4 fw-normal">What <span class="text-warning">Clients</span> Say About Us!</div>
+            <div class="fw-light">Discover real stories from people who believed in our vision .Their voices reflect the
+                impact we make and the inspiration we share.</div>
+            <div class="row w-100 my-4">
+                <div class="col">
+                    <div class="feedback-card card bg-transparent border-warning">
+                        <div class="card-body text-center text-white">
+                            <div class="big-quote text-warning text-start">“</div>
+                            <div class="card-text fs-6 fw-light">It’s rare to find a company that combines
+                                professionalism with genuine care, but they do it effortlessly.</div>
+                            <div class="position-relative top-100">
+                                <div class="text-warning">Angel Di Maria</div>
+                                <div class="job-title fw-light">CEO - Market movers</div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="reach-description fs-5">
-                        We are growing all over the world! <br />From small local beginnings to global success, our
-                        energy knows no limits. <br />Every step we take connects people, ideas, and dreams from every
-                        corner of the planet. <br />We don’t just exist — we create, inspire, and lead.
-                    </p>
+                </div>
+                <div class="col">
+                    <div class="feedback-card card bg-transparent border-warning">
+                        <div class="card-body text-center text-white">
+                            <div class="big-quote text-warning text-start">“</div>
+                            <div class="card-text fs-6 fw-light">It’s rare to find a company that combines
+                                professionalism with genuine care, but they do it effortlessly. They bring ideas to life
+                                in ways that inspire confidence and excitement. </div>
+                            <div class="position-relative top-100">
+                                <div class="text-warning">Ibrahim adel</div>
+                                <div class="job-title fw-light">CEO - Market movers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feedback-card card bg-transparent border-warning">
+                        <div class="card-body text-center text-white">
+                            <div class="big-quote text-warning text-start">“</div>
+                            <div class="card-text fs-6 fw-light">It’s rare to find a company that combines
+                                professionalism with genuine care, but they do it effortlessly. They bring ideas to life
+                                in ways that inspire confidence and excitement. </div>
+                            <div class="position-relative top-100">
+                                <div class="text-warning">Mario</div>
+                                <div class="job-title fw-light">CEO - Market movers</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Reach Section 2 -->
-    <div class="container d-flex flex-column align-items-center">
-        <div>
-            <span class="badge fw-normal fs-6 p-3 mb-2 ">Our Reach</span>
-        </div>
-        <div class="fs-1">What <span class="text-color-primary">Clients</span> Say About Us!</div>
-        <div>
-            Discover real stories from people who believed in our vision .Their voices reflect the impact we make
-            and the inspiration we share.
-        </div>
-        <div class="feedbacks row w-100">
-            <div class="col-4">
-                <div class="card feedback-card bg-transparent border-warning py-3">
-                    <div class="card-body text-center">
-                        <div class="big-quote text-color-primary position-absolute">“</div>
-                        <div class="card-text text-white fw-light fs-5 mt-5">It’s rare to find a
-                            company
-                            that combines professionalism with genuine care, but they do it effortlessly.
-                        </div>
-                        <div class="text-color-primary">
-                            Angel Di Maria
-                        </div>
-                        <div class="text-white fw-light job-title">
-                            CEO - Market movers
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card feedback-card bg-transparent border-warning py-3">
-                    <div class="card-body text-center">
-                        <div class="big-quote text-color-primary position-absolute">“</div>
-                        <div class="card-text text-white fw-light fs-5 mt-5">It’s rare to find a company that combines
-                            professionalism with genuine care, but they do it effortlessly. They bring ideas to life in
-                            ways that inspire confidence and excitement.
-                        </div>
-                        <div class="text-color-primary">
-                            Ibrahim adel
-                        </div>
-                        <div class="text-white fw-light job-title">
-                            CEO - Market movers
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card feedback-card bg-transparent border-warning py-3">
-                    <div class="card-body text-center">
-                        <div class="big-quote text-color-primary position-absolute">“</div>
-                        <div class="card-text text-white fw-light fs-5 mt-5">It’s rare to find a company that combines
-                            professionalism with genuine care, but they do it effortlessly. They bring ideas to life in
-                            ways that inspire confidence and excitement.
-                        </div>
-                        <div class="text-color-primary">
-                            Mario
-                        </div>
-                        <div class="text-white fw-light job-title">
-                            CEO - Market movers
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer Section -->
-    <footer id="ContactUs" class="w-100 position-relative">
-        <section>
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-3 mx-auto mb-4">
-                        <h6 class="fw-bold fs-2">
-                            <span class="text-white">Fivoa</span><span class="text-color-primary">Space</span>
-                        </h6>
-                        <p class="fs-5 fw-light">
-                            Where Dreams Grow...
-                        </p>
-                        <p class="fs-6 mt-5 mb-0">
+    <footer id="ContactUs" class="w-100 position-relative overflow-hidden">
+        <div class="container text-start mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <h6 class="footer-brand text-white fw-bold fs-2">
+                        Fivora<span class="text-warning">Space</span>
+                    </h6>
+                    <div class="fs-5 fw-light">Where Dreams Grow...</div>
+
+                    <div class="my-5">
+                        <div>
                             Address
-                        </p>
-                        <p class="fs-6 fw-light">
+                        </div>
+                        <div class="fw-light">
                             35 Washington Park Drive USA.
-                        </p>
-                        <p class="fs-6 mt-5 mb-0">
-                            Contact details:
-                        </p>
-                        <p class="fs-6 fw-light">
-                            405-45-800
-                            <br />
-                            500-30-1000
-                            <br />
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div>
+                            Contact details
+                        </div>
+                        <div class="fw-light">
+                            405-45-800 <br>
+                            500-30-1000 <br>
                             FivoraSpace@support.com
-                        </p>
-                    </div>
-                    <div class="col-3 mx-auto mb-4">
-                        <h6 class="text-color-primary fs-4">
-                            Services
-                        </h6>
-                        <ul class="fs-6 fw-light">
-                            <li>
-                                <p>SEO</p>
-                            </li>
-                            <li>
-                                <p>Content Marketing</p>
-                            </li>
-                            <li>
-                                <p>Email Marketing</p>
-                            </li>
-                            <li>
-                                <p>Brand Development</p>
-                            </li>
-                            <li>
-                                <p>Influencer Marketing</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-3 mx-auto mb-4">
-                        <h6 class="text-color-primary fs-4">
-                            Products
-                        </h6>
-                        <ul class="fs-6 fw-light">
-                            <li>
-                                <p>SEO Optimization</p>
-                            </li>
-                            <li>
-                                <p>Content Reach Check</p>
-                            </li>
-                            <li>
-                                <p>Brand Identity Builder</p>
-                            </li>
-                            <li>
-                                <p>Email/Ads Marketing</p>
-                            </li>
-                            <li>
-                                <p>Contact with Influencers</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-3 mx-auto mb-4">
-                        <h6 class="text-color-primary fs-4">
-                            Legal
-                        </h6>
-                        <ul class="fs-6 fw-light">
-                            <li>
-                                <p>Contact</p>
-                            </li>
-                            <li>
-                                <p>Privacy Policy</p>
-                            </li>
-                            <li>
-                                <p>Terms & Conditions</p>
-                            </li>
-                        </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <h6 class="text-warning fs-2">
+                        Services
+                    </h6>
+                    <ul class="fw-light">
+                        <li class="my-3">SEO</li>
+                        <li class="my-3">Content Markting</li>
+                        <li class="my-3">Email Marketing</li>
+                        <li class="my-3">Brand Development</li>
+                        <li class="my-3">Influencer Marketing</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6 class="text-warning fs-2">
+                        Products
+                    </h6>
+                    <ul class="fw-light">
+                        <li class="my-3">SEO Optimizer</li>
+                        <li class="my-3">Content Reach Check</li>
+                        <li class="my-3">Brand Identity Builder</li>
+                        <li class="my-3">Email/Ads Marketing</li>
+                        <li class="my-3">Contact With Influencers</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6 class="text-warning fs-2">
+                        Products
+                    </h6>
+                    <ul class="fw-light">
+                        <li class="my-3">Contact</li>
+                        <li class="my-3">Privacy Policy</li>
+                        <li class="my-3">Terms & Conditions</li>
+                    </ul>
+                </div>
             </div>
-
             <div class="footer-medias position-absolute">
-                <a class="text-muted m-1" href="https://www.linkedin.com/">
-                    <img src="../img/icons/linkedin.png" alt="Linkedin">
-                </a>
-                <a class="text-muted m-1" href="https://www.facebook.com/">
+                <a href="https://www.linedin.com/" class="text-muted m-1">
+                    <img src="../img/icons/linkedin.png" alt="LinkedIn">
+                </a> <a href="https://www.instegram.com/" class="text-muted m-1">
+                    <img src="../img/icons/instagram.png" alt="Instegram">
+                </a> <a href="https://www.facebook.com/" class="text-muted m-1">
                     <img src="../img/icons/facebook.png" alt="Facebook">
                 </a>
-                <a class="text-muted m-1" href="https://www.instagram.com/">
-                    <img src="../img/icons/instagram.png" alt="Instagram">
-                </a>
             </div>
-        </section>
-        <div class="footer-copyright text-center fs-5 p-2">
-            ©2025, FivoraSpace.Vnc
+        </div>
+        <div class="footer-copyright text-center fs-5 p-2 text-black bg-warning w-100">
+            &copy; 2025, FivoraSpace .Vnc
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap Script -->
     <script src="../lib/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
